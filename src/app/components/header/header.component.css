@@ -1,0 +1,21 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff;
+    transition: 1000ms;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+    transition: 1000ms;
+}

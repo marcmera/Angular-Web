@@ -1,0 +1,21 @@
+footer {
+    position: fixed;
+    bottom: 5px;
+    left: 25%;
+    width: 50%;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff;
+    transition: 1000ms;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+    transition: 1000ms;
+}

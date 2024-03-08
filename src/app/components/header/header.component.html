@@ -1,0 +1,45 @@
+<header [class]="headerClass" class="header">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            @if (headerClass === 'light'){
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                <path
+                    d="M 5 5 A 1.0001 1.0001 0 0 0 4 6 L 4 44 A 1.0001 1.0001 0 0 0 5 45 L 8 45 A 1.0001 1.0001 0 1 0 8 43 L 6 43 L 6 7 L 8 7 A 1.0001 1.0001 0 1 0 8 5 L 5 5 z M 42 5 A 1.0001 1.0001 0 1 0 42 7 L 44 7 L 44 43 L 42 43 A 1.0001 1.0001 0 1 0 42 45 L 45 45 A 1.0001 1.0001 0 0 0 46 44 L 46 6 A 1.0001 1.0001 0 0 0 45 5 L 42 5 z M 31.074219 17.509766 C 29.975744 17.487506 28.868391 17.760297 27.978516 18.373047 C 27.407516 18.767047 26.915609 19.272813 26.349609 19.757812 C 25.488609 18.039813 23.929344 17.580781 22.152344 17.550781 C 20.351344 17.519781 18.920922 18.341797 17.669922 19.841797 L 17.669922 18 L 14 18 L 14 32 L 17.664062 32 C 17.664062 32 17.657969 26.766016 17.667969 24.166016 C 17.669969 23.704016 17.689203 23.23225 17.783203 22.78125 C 18.073203 21.39225 19.538031 20.534437 20.957031 20.648438 C 22.309031 20.757437 23.100016 21.495656 23.166016 23.097656 C 23.177016 23.376656 23.166016 32 23.166016 32 L 26.832031 32 L 26.832031 24.228516 C 26.838031 23.629516 26.901875 23.0175 27.046875 22.4375 C 27.372875 21.1375 28.590531 20.49825 30.019531 20.65625 C 31.279531 20.79525 32.239031 21.474609 32.332031 22.849609 L 32.332031 32 L 36 32 L 36 22 C 36 21 35.746359 20.490859 35.443359 19.880859 C 34.710859 18.405234 32.90501 17.546865 31.074219 17.509766 z">
+                </path>
+            </svg>}
+            @else{
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(5.12,5.12)">
+                        <path
+                            d="M5,5c-0.55226,0.00006 -0.99994,0.44774 -1,1v38c0.00006,0.55226 0.44774,0.99994 1,1h3c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587h-2v-36h2c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM42,5c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h2v36h-2c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3c0.55226,-0.00006 0.99994,-0.44774 1,-1v-38c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM31.07422,17.50977c-1.09848,-0.02226 -2.20583,0.25053 -3.0957,0.86328c-0.571,0.394 -1.06291,0.89977 -1.62891,1.38477c-0.861,-1.718 -2.42027,-2.17703 -4.19727,-2.20703c-1.801,-0.031 -3.23142,0.79102 -4.48242,2.29102v-1.8418h-3.66992v14h3.66406c0,0 -0.00609,-5.23398 0.00391,-7.83398c0.002,-0.462 0.02123,-0.93377 0.11523,-1.38477c0.29,-1.389 1.75483,-2.24681 3.17383,-2.13281c1.352,0.109 2.14298,0.84722 2.20898,2.44922c0.011,0.279 0,8.90234 0,8.90234h3.66602v-7.77148c0.006,-0.599 0.06984,-1.21102 0.21484,-1.79102c0.326,-1.3 1.54366,-1.93925 2.97266,-1.78125c1.26,0.139 2.2195,0.81836 2.3125,2.19336v9.15039h3.66797v-10c0,-1 -0.25364,-1.50914 -0.55664,-2.11914c-0.7325,-1.47563 -2.53835,-2.33399 -4.36914,-2.37109z">
+                        </path>
+                    </g>
+                </g>
+            </svg>}
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Mera</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2"
+                (click)="changeHeaderClass('dark')">Dark</button>
+            <button type="button"
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2"
+                (click)="changeHeaderClass('light')">Light</button>
+            <button data-collapse-toggle="navbar-cta" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-cta" aria-expanded="true">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+        </div>
+        <app-section [class]="headerClass"></app-section>
+    </div>
+</header>
