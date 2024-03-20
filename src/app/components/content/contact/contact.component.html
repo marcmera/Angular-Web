@@ -1,0 +1,45 @@
+<div id="contact" class="h-[100vh]">
+    <div class="w-full flex justify-center items-center">
+        <h1 class="block py-2 px-3 md:p-0 rounded md:text-blue-700 text-4xl  mt-28">
+            Contact
+        </h1>
+    </div>
+    <div>
+        <form class="max-w-sm mx-auto mt-36">
+            <div class="mb-5">
+                <label for="username" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">
+                    Username</label>
+                <input type="text" id="username"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                    placeholder="username" required />
+            </div>
+            <div class="mb-5">
+                <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Email</label>
+                <input type="email" id="email"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                    placeholder="name@mera.com" required />
+            </div>
+            <div class="mb-5">
+                <label for="your-message"
+                    class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Message</label>
+                <textarea type="text" id="your-message"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-ms rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                    required rows="3"></textarea>
+            </div>
+            <div class="flex items-start mb-5">
+                <div class="flex items-center h-6">
+                    <input id="terms" type="checkbox" value=""
+                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 cursor-pointer"
+                        required />
+                </div>
+                <label for="terms" class="ms-2 text-md font-medium text-gray-900 dark:text-gray-300">I agree
+                    with the <span class="text-blue-600 hover:underline dark:text-blue-500 cursor-pointer">terms
+                        and
+                        conditions</span></label>
+            </div>
+            <button type="submit"
+                class="text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send
+                message</button>
+        </form>
+    </div>
+</div>

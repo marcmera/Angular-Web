@@ -3,19 +3,27 @@
         class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
         <li>
             <button class="block py-2 px-3 md:p-0 rounded hover:text-blue-700 focus:text-blue-700 text-xl"
-                aria-current="page" (click)="scrollToSection('home')">Home</button>
+                aria-current="page" routerLink="home">Home</button>
         </li>
         <li>
             <button class="block py-2 px-3 md:p-0 rounded text-xl hover:text-blue-700 focus:text-blue-700"
-                (click)="scrollToSection('about')">About</button>
+                routerLink="about">About</button>
         </li>
         <li>
             <button class="block py-2 px-3 md:p-0 rounded text-xl hover:text-blue-700 focus:text-blue-700"
-                (click)="scrollToSection('services')">Services</button>
+                routerLink="services">Services</button>
         </li>
         <li>
             <button class="block py-2 px-3 md:p-0 rounded text-xl hover:text-blue-700 focus:text-blue-700"
-                (click)="scrollToSection('contact')">Contact</button>
+                routerLink="reviews">Reviews</button>
+        </li>
+        <li>
+            <button class="block py-2 px-3 md:p-0 rounded text-xl hover:text-blue-700 focus:text-blue-700"
+                routerLink="contact">Contact</button>
+        </li>
+        <li>
+            <button class="block py-2 px-3 md:p-0 rounded text-xl hover:text-blue-700 focus:text-blue-700"
+                routerLink="add-review">Add Reviews</button>
         </li>
     </ul>
 </div>
