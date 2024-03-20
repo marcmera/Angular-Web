@@ -1,5 +1,8 @@
 export interface products {
     id: number;
     name: string;
-    price: string;
+    description: string;
+    sex: string;
+    price: number;
+    onSale: boolean;
 }
