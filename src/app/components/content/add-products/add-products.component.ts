@@ -25,7 +25,7 @@ export class SendProductsComponent {
   productForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
     description: new FormControl('', [Validators.required, Validators.maxLength(100)]),
-    price: new FormControl('', [Validators.required, Validators.pattern(/^\d+\.\d{2}$/)]), // 2 decimal places
+    price: new FormControl('', [Validators.required]),
     sex: new FormControl('', [Validators.required, Validators.pattern(/^[M|F]$/)]),
     onSale: new FormControl(false)
   });
