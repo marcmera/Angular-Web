@@ -1,17 +1,25 @@
 <div class=" w-full flex flex-col justify-center items-center h-[100vh] bg-gray-100">
     <form class="flex flex-col justify-center gap-5" [formGroup]="productForm" (ngSubmit)="onSubmit()">
         <div class="flex flex-col">
-            <label for="review" class="text-lg">Name*</label>
+            <label for="review" class="text-lg">Name (max:20)*</label>
             <input matInput name="name" type="text" formControlName="name" class="my-3 p-3 text-lg" id="review"
                 [(ngModel)]="nameValue">
             @if (nameValue === ''){<p class="text-red-500">Name is required</p>}
-            <label for="content" class="text-lg">Description*</label>
+            @if (nameValue.length > 20){<p class="text-red-500">Name is too long</p>}
+            <label for="content" class="text-lg">Description (max:30)*</label>
             <textarea formControlName="description" class="my-3 p-3 text-md" id="description" rows="3" [disabled]="true"
                 [(ngModel)]="descriptionValue"></textarea>
             @if (descriptionValue === ''){<p class="text-red-500">Description is required</p>}
-            @if (descriptionValue.length > 100){<p class="text-red-500">Description is too long</p>}
+            @if (descriptionValue.length > 30){<p class="text-red-500">Description is too long</p>}
         </div>
-        
+        <div>
+            <label for="review" class="text-lg">Price*</label>
+            <input matInput name="price" type="number" formControlName="price" class="my-3 p-3 text-lg" id="price"
+                [(ngModel)]="priceValue">
+            @if (priceValue === 0){<p class="text-red-500">Price is required</p>}
+            @if (priceValue < 0){<p class="text-red-500">Price is invalid</p>}
+                @if (priceValue > 10000){<p class="text-red-500">Price is too high</p>}
+        </div>
         <label for="review" class="text-lg">Sex*</label>
         <mat-form-field>
             <mat-label>Select</mat-label>
@@ -24,7 +32,6 @@
         <mat-checkbox formControlName="onSale" id="onSale" [(ngModel)]="onSaleValue"><span class="text-lg">
                 On sale
             </span></mat-checkbox>
-        @if (onSaleValue === false){<p class="text-red-500">On sale is required</p>}
         @if(productForm.invalid){
         <button type="submit" class="rounded-lg py-3 mt-5 bg-blue-300 text-xl opacity-25" disabled>Submit</button>
         }

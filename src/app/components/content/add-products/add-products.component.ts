@@ -23,9 +23,14 @@ export class SendProductsComponent {
   products: products[] = [];
 
   productForm = new FormGroup({
-    name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
-    description: new FormControl('', [Validators.required, Validators.maxLength(100)]),
-    price: new FormControl('', [Validators.required]),
+    name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]),
+    description: new FormControl('', [Validators.required, Validators.maxLength(30)]),
+    price: new FormControl('', [
+      Validators.required,
+      Validators.pattern(/^[0-9]+(\.[0-9]{1,2})?$/),
+      Validators.min(0.01),
+      Validators.max(9999.99)
+    ]),
     sex: new FormControl('', [Validators.required, Validators.pattern(/^[M|F]$/)]),
     onSale: new FormControl(false)
   });
