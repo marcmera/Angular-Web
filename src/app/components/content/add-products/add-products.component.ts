@@ -57,5 +57,10 @@ export class SendProductsComponent {
   sendProductsSignal() {
     this.addProductsService.datosCompartidos.set(this.products);
   }
+
+  ngOnInit(): void {
+    this.products = this.addProductsService.datosCompartidos();
+  }
 }
+
 
